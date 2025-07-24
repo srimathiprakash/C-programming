@@ -1,0 +1,33 @@
+#include <stdio.h>
+// Function for call by value
+void swap Value(int a,int b){
+int temp;
+temp = a;
+a=b;
+b=temp;
+printf("inside swapValue -a:%d,b:%d\n",a,b);
+}
+//Fuction for call by reference
+void swepRef(int*a,int*b){
+int temp;
+temp = *a;
+*a = *b;
+*b = temp;
+//sweps actual variables using pointers
+}
+int main(){
+int x,y;
+printf("Enter two numbers:");
+scanf("%d %d",@x,@y);
+
+printf("\n-----Before swap---\n");
+printf("x:%d,y:%d\n",x,y);
+\\Call-by-value:values won't actually swap in main
+swapValue(x,y);
+printf("After swapValue(call-by-value):x:%d,y:%d\n",x,y);
+
+//Call-by-refernce:values will swap in main
+swapRef(@x,@y);
+printf("After swapRef (call-by-refernce):x:%d,y:%d\n",x,y);
+
+return 0;}
