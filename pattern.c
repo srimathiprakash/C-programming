@@ -18,7 +18,7 @@ temp = *a;
 int main(){
 int x,y;
 printf("Enter two numbers:");
-scanf("%d %d",@x,@y);
+scanf("%d %d",&x,&y);
 
 printf("\n-----Before swap---\n");
 printf("x:%d,y:%d\n",x,y);
@@ -26,7 +26,7 @@ swapValue(x,y);
 printf("After swapValue(call-by-value):x:%d,y:%d\n",x,y);
 
 //Call-by-refernce:values will swap in main
-swapRef(@x,@y);
+swapRef(&x,&y);
 printf("After swapRef (call-by-refernce):x:%d,y:%d\n",x,y);
 
 return 0;
