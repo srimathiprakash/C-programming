@@ -26,7 +26,6 @@ swapValue(x,y);
 printf("After swapValue(call-by-value):x:%d,y:%d\n",x,y);
 
 //Call-by-refernce:values will swap in main
-swapRef(&x,&y);
 printf("After swapRef (call-by-refernce):x:%d,y:%d\n",x,y);
 
 return 0;
